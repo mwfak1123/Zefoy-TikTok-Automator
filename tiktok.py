@@ -130,9 +130,9 @@ class zefoy:
     def convert(self, min, sec):
         seconds = 0
         if min != 0:
-            answer = int(min) * 60
+            answer = int(min) * 1.0
             seconds += answer
-        seconds += int(sec) + 5
+        seconds += int(sec) + 1
         return seconds
 
     def check_submit(self, div):
@@ -181,3 +181,4 @@ if __name__ == "__main__":
     obj = zefoy()
     obj.main()
     input()
+
